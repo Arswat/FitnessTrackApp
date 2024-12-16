@@ -35,5 +35,6 @@ Open your browser and go to https://fitnesstrackapp-frontend.onrender.com
 ![image](https://github.com/user-attachments/assets/75af51f2-4fcd-4682-8580-eeda9efa69ac)
 ![image](https://github.com/user-attachments/assets/e71f6782-e78c-4270-a7ea-4d85d5773d65)
 ![image](https://github.com/user-attachments/assets/b292fe12-61e0-4383-9513-30d039205bbf)
+![image](https://github.com/user-attachments/assets/e0898701-09f6-4f92-9179-5bc683eeeec9)
 
 
