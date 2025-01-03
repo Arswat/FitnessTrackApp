@@ -12,7 +12,7 @@ dotenv.config();
 
 const app = express();
 const corsOptions = {
-  origin: 'http://localhost:3000', //  frontend origin
+  origin: 'https://fitnesstrackapp-frontend.onrender.com', //  frontend origin
   optionsSuccessStatus: 200,
 };
 
