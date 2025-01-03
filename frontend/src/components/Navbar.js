@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
 import { logout } from '../redux/actions/authActions';
 import "../index.css"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 const AppNavbar = () => {
   const dispatch = useDispatch();
   const { userInfo } = useSelector((state) => state.userLogin);
@@ -19,7 +19,7 @@ const AppNavbar = () => {
   return (
     <>
     <Navbar bg="black" variant="dark" expand="lg" collapseOnSelect>
-      <Navbar.Brand href="/" className="me-auto px-2">Fitness Track</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/" className="me-auto px-2">Fitness Track</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto px-2">

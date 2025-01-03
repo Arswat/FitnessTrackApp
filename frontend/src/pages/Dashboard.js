@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
 import { FaDumbbell, FaAppleAlt, FaChartLine, FaUpload } from 'react-icons/fa'; // Icons
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchWorkouts } from '../redux/actions/workoutActions';
@@ -37,7 +37,9 @@ const Dashboard = () => {
               <FaDumbbell size={50} className="mb-3" />
               <Card.Title>Workouts</Card.Title>
               <Card.Text>Log and track your daily workouts.</Card.Text>
-              <Button variant="primary" className="btn-custom" href="/workouts">Go to Workouts</Button>
+              <Link to="/workouts" className="btn btn-primary workout-btn">
+              Go to Workouts
+              </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -47,7 +49,9 @@ const Dashboard = () => {
               <FaAppleAlt size={50} className="mb-3" />
               <Card.Title>Diet Plans</Card.Title>
               <Card.Text>Track your daily caloric intake.</Card.Text>
-              <Button variant="primary" className="btn-custom" href="/diet">Go to Diet Plan</Button>
+              <Link to="/diet" className="btn btn-primary workout-btn">
+              Go to Diet Plan
+              </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -57,7 +61,9 @@ const Dashboard = () => {
               <FaChartLine size={50} className="mb-3" />
               <Card.Title>Progress</Card.Title>
               <Card.Text>Monitor your fitness progress.</Card.Text>
-              <Button variant="primary" className="btn-custom" href="/progress">Go to Progress</Button>
+              <Link to="/progress" className="btn btn-primary workout-btn">
+              Go to Progress
+              </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -67,7 +73,9 @@ const Dashboard = () => {
               <FaUpload size={50} className="mb-3" />
               <Card.Title>Transformation  Record</Card.Title>
               <Card.Text>View your transformation progress.</Card.Text>
-              <Button variant="primary" className="btn-custom" href="/transformation">Go to Transformation</Button>
+              <Link to="/transformation" className="btn btn-primary workout-btn">
+              Go to Transformation
+              </Link>
             </Card.Body>
           </Card>
         </Col>
